@@ -1,3 +1,14 @@
+:root {
+  --black: #1e1c2a;
+  --gray: #353340;
+  --lightgray: #dadadb;
+  --white: #ffffff;
+  --red: #ea5f5f;
+  --orange: #ff7551;
+  --purple: #8941e3;
+  --green: #22af7c;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -5,7 +16,7 @@ html {
 body {
   padding: 4vh 1.5rem 6vh 1rem;
   margin: 0;
-  background-color: #1e1c2a;
+  background-color: var(--black);
 }
 
 #app {
