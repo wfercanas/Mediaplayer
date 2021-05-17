@@ -9,6 +9,8 @@
   --green: #22af7c;
 }
 
+/* General styling */
+
 html {
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,6 +20,10 @@ body {
   padding: 4vh 4rem 6vh 3rem;
   margin: 0;
   background-color: var(--black);
+}
+
+i {
+  font-size: 1.2rem;
 }
 
 #app {
