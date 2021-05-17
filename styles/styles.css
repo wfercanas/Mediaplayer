@@ -1,6 +1,7 @@
 :root {
   --black: #1e1c2a;
   --gray: #353340;
+  --midgray: #897f99;
   --lightgray: #dadadb;
   --white: #fbfbfb;
   --red: #ea5f5f;
@@ -32,7 +33,7 @@ i {
   height: 90vh;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 6fr 5fr;
+  grid-template-rows: 5vh 70vh 80vh;
   gap: 1rem;
 }
 
@@ -57,6 +58,10 @@ i {
 
 #search-bar input:focus {
   outline: none;
+}
+
+#search-bar input::placeholder {
+  color: var(--lightgray);
 }
 
 /* Profile section */
@@ -88,6 +93,93 @@ i {
 }
 
 #profile__user i:hover {
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* Live Chat section */
+#live-chat {
+  background-color: var(--gray);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+#live-chat__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#live-chat__header--title {
+  margin: 0;
+}
+
+#live-chat__header--people {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--lightgray);
+}
+
+#live-chat__header--people p {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+#live-chat__content {
+  overflow-y: scroll;
+}
+
+.live-chat__content--post {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.live-chat__content--post div {
+  margin: 0 1rem;
+}
+
+.live-chat__content--post h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.live-chat__content--post p {
+  font-size: 0.7rem;
+  color: var(--lightgray);
+}
+
+#live-chat__write {
+  background-color: var(--midgray);
+  color: var(--lightgray);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#live-chat__write input {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  width: 90%;
+}
+
+#live-chat__write input:focus {
+  outline: none;
+}
+
+#live-chat__write input::placeholder {
+  color: var(--lightgray);
+}
+
+#live-chat__write i:hover {
   cursor: pointer;
   color: var(--white);
 }
