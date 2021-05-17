@@ -11,6 +11,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -26,4 +27,27 @@ body {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 6fr 5fr;
   gap: 1rem;
+}
+
+/* Search Bar */
+#search-bar {
+  background-color: var(--gray);
+  color: var(--lightgray);
+  width: 60%;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search-bar input {
+  background-color: transparent;
+  color: var(--lightgray);
+  border: none;
+  width: 95%;
+}
+
+#search-bar input:focus {
+  outline: none;
 }
