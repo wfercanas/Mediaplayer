@@ -1,11 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 0;
+  padding: 4vh 1.5rem 6vh 1rem;
   margin: 0;
+  background-color: #1e1c2a;
 }
 
 #app {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 6fr 5fr;
