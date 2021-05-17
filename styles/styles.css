@@ -34,7 +34,7 @@ i {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 5vh 70vh 80vh;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 /* Search Bar */
@@ -95,6 +95,53 @@ i {
 #profile__user i:hover {
   cursor: pointer;
   color: var(--white);
+}
+
+/* Media player */
+
+#mediaplayer {
+  position: relative;
+}
+
+#mediaplayer__video {
+  width: 100%;
+  height: 100%;
+  background-color: var(--lightgray);
+  border-radius: 1rem;
+}
+
+#mediaplayer__controls {
+  background-color: var(--gray);
+  border-radius: 1rem;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 1rem;
+  left: 5rem;
+  right: 5rem;
+}
+
+#mediaplayer__controls i {
+  font-size: 1.5rem;
+}
+#mediaplayer__controls .icon-volume-medium {
+  font-size: 1.1rem;
+}
+
+.__controls--progressive-bar {
+  height: 3px;
+}
+
+.__controls--progressive-bar.back {
+  width: 60%;
+  background-color: var(--lightgray);
+}
+
+.__controls--progressive-bar.front {
+  width: 30%;
+  background-color: var(--orange);
 }
 
 /* Live Chat section */
