@@ -1,0 +1,26 @@
+/* Search Bar */
+#search-bar {
+  background-color: var(--gray);
+  color: var(--lightgray);
+  width: 60%;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search-bar input {
+  background-color: transparent;
+  color: var(--lightgray);
+  border: none;
+  width: 95%;
+}
+
+#search-bar input:focus {
+  outline: none;
+}
+
+#search-bar input::placeholder {
+  color: var(--lightgray);
+}

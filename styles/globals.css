@@ -1,0 +1,38 @@
+:root {
+  --black: #1e1c2a;
+  --gray: #353340;
+  --midgray: #897f99;
+  --lightgray: #dadadb;
+  --white: #fbfbfb;
+  --red: #ea5f5f;
+  --orange: #ff7551;
+  --purple: #8941e3;
+  --green: #22af7c;
+}
+
+/* General styling */
+
+html {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 4vh 4rem 6vh 3rem;
+  margin: 0;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+i {
+  font-size: 1.2rem;
+}
+
+#app {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 5vh 70vh 80vh;
+  gap: 2rem;
+}
