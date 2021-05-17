@@ -2,7 +2,7 @@
   --black: #1e1c2a;
   --gray: #353340;
   --lightgray: #dadadb;
-  --white: #ffffff;
+  --white: #fbfbfb;
   --red: #ea5f5f;
   --orange: #ff7551;
   --purple: #8941e3;
@@ -20,6 +20,7 @@ body {
   padding: 4vh 4rem 6vh 3rem;
   margin: 0;
   background-color: var(--black);
+  color: var(--white);
 }
 
 i {
@@ -56,4 +57,37 @@ i {
 
 #search-bar input:focus {
   outline: none;
+}
+
+/* Profile section */
+#profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--lightgray);
+}
+
+#profile > i:hover {
+  cursor: pointer;
+  color: var(--white);
+}
+
+#profile__user {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+#profile__user img {
+  scale: 0.8;
+}
+
+#profile__user p {
+  margin: 0 0.2rem 0 0.5rem;
+  font-size: 0.8rem;
+}
+
+#profile__user i:hover {
+  cursor: pointer;
+  color: var(--white);
 }
