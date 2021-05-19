@@ -5,6 +5,7 @@
   margin-bottom: 3rem;
 }
 
+/* Content of the video */
 #video-description__content--owner {
   display: flex;
   align-items: flex-start;
@@ -22,4 +23,31 @@
   font-size: 0.8rem;
   color: var(--lightgray);
   margin: 0;
+}
+
+/* Actions and data of the video */
+#video-description__actions--buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+#video-description__actions--buttons button {
+  width: 45%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--midgray);
+  color: var(--white);
+}
+
+#video-description__actions--buttons button:hover {
+  cursor: pointer;
+}
+
+#video-description__actions--buttons button i {
+  margin-right: 0.3rem;
 }
