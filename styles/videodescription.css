@@ -52,3 +52,17 @@
 #video-description__actions--buttons button i {
   margin-right: 0.3rem;
 }
+
+.video-description__actions--data {
+  display: flex;
+  align-items: center;
+  color: var(--lightgray);
+}
+
+.video-description__actions--data i {
+  margin-right: 0.5rem;
+}
+
+.video-description__actions--data p {
+  margin: 0.5rem 0;
+}
