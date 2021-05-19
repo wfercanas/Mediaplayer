@@ -1,0 +1,54 @@
+#related-videos__title {
+  margin: 0 0 1rem;
+}
+
+.related-videos__container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.related-videos__cover {
+  width: 35%;
+  height: auto;
+  background-color: var(--lightgray);
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+.related-videos__content--title {
+  margin: 0 0 0.5rem;
+}
+
+.related-videos__content--author {
+  color: var(--lightgray);
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.related-videos__content--metadata {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  color: var(--lightgray);
+  font-size: 0.8rem;
+}
+
+.related-videos__content--metadata p {
+  margin: 0;
+}
+
+#related-videos__more-videos-btn {
+  color: var(--lightgray);
+  background-color: var(--purple);
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 0.8rem 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#related-videos__more-videos-btn:hover {
+  cursor: pointer;
+  color: var(--white);
+}
