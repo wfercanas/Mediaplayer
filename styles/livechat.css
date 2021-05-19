@@ -65,19 +65,21 @@
   align-items: center;
 }
 
-#live-chat__write input {
+#live-chat__write textarea {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.7rem;
   background-color: transparent;
   border: none;
   color: var(--white);
   width: 90%;
 }
 
-#live-chat__write input:focus {
+#live-chat__write textarea:focus {
   outline: none;
 }
 
-#live-chat__write input::placeholder {
-  color: var(--lightgray);
+#live-chat__write textarea::placeholder {
+  color: var(--white);
 }
 
 #live-chat__write i:hover {
