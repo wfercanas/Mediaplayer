@@ -1,0 +1,25 @@
+#video-description {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 3rem;
+}
+
+#video-description__content--owner {
+  display: flex;
+  align-items: flex-start;
+}
+
+#video-description__content--owner div {
+  margin: 0 1rem;
+}
+
+#video-description__content--owner h3 {
+  margin: 0;
+}
+
+#video-description__content--owner p {
+  font-size: 0.8rem;
+  color: var(--lightgray);
+  margin: 0;
+}
