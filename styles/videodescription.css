@@ -41,11 +41,12 @@
   border-radius: 1rem;
   border: none;
   background-color: var(--midgray);
-  color: var(--white);
+  color: var(--lightgray);
 }
 
 #video-description__actions--buttons button:hover {
   cursor: pointer;
+  color: var(--white);
 }
 
 #video-description__actions--buttons button i {
