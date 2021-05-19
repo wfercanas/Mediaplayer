@@ -72,6 +72,8 @@
   border: none;
   color: var(--white);
   width: 90%;
+  height: 1rem;
+  resize: none;
 }
 
 #live-chat__write textarea:focus {
