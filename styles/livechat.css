@@ -43,6 +43,7 @@
 
 .live-chat__content--post div {
   margin: 0 1rem;
+  min-width: 75%;
 }
 
 .live-chat__content--post h3 {
@@ -85,7 +86,7 @@
   color: var(--white);
 }
 
-#live-chat__write button {
+#live-chat__write--button {
   background: transparent;
   border: none;
   padding: 0;

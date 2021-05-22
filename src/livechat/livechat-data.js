@@ -1,4 +1,4 @@
-let livechatContentData = [
+const livechatContentData = [
   {
     username: 'Aliza Abadi',
     avatarURL: '../../assets/avatars/Aliza.svg',
@@ -21,4 +21,9 @@ let livechatContentData = [
   },
 ];
 
-export { livechatContentData };
+const livechatUserData = {
+  username: 'Thomas Digne',
+  avatarURL: '../../assets/avatars/Alexander.svg',
+};
+
+export { livechatContentData, livechatUserData };
