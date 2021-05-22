@@ -37,23 +37,22 @@
 
 .live-chat__content--post {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
 .live-chat__content--post div {
   margin: 0 1rem;
-  min-width: 75%;
 }
 
 .live-chat__content--post h3 {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.3rem;
   font-size: 1rem;
 }
 
 .live-chat__content--post p {
   font-size: 0.7rem;
   color: var(--lightgray);
+  margin: 0 0 1rem;
 }
 
 #live-chat__write {
