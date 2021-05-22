@@ -5,6 +5,7 @@
   border-radius: 1rem;
   display: grid;
   grid-auto-flow: row;
+  grid-template-rows: 10% 1fr 10%;
 }
 
 #live-chat__header {
