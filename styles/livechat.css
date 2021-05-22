@@ -59,7 +59,7 @@
   background-color: var(--midgray);
   color: var(--lightgray);
   border-radius: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
@@ -83,6 +83,13 @@
 
 #live-chat__write textarea::placeholder {
   color: var(--white);
+}
+
+#live-chat__write button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: var(--lightgray);
 }
 
 #live-chat__write i:hover {
