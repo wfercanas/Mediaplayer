@@ -11,8 +11,8 @@
 }
 
 #mediaplayer__controls {
-  background-color: var(--gray);
-  color: var(--lightgray);
+  background-color: var(--green);
+  color: var(--white);
   border-radius: 1rem;
   padding: 0 3rem;
   display: flex;
@@ -25,12 +25,12 @@
 }
 
 #mediaplayer__controls i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  margin: 0 0.3rem;
 }
 
 #mediaplayer__controls i:hover {
   cursor: pointer;
-  color: var(--white);
 }
 
 .ci-move {
@@ -51,7 +51,7 @@
 }
 
 .__controls--progressive-bar.front {
-  width: 30%;
+  width: 0%;
   background-color: var(--orange);
 }
 
