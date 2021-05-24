@@ -38,7 +38,7 @@ const livechatContentData = [
 
 const livechatUserData = {
   username: 'Thomas Digne',
-  avatarURL: '../../assets/avatars/Alexander.svg',
+  avatarURL: './assets/avatars/Alexander.svg',
 };
 
 export { livechatContentData, livechatUserData };
