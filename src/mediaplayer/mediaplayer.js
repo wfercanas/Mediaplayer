@@ -73,7 +73,7 @@ const setVideoCurrentTime = () => {
 
 /* Next video */
 const setNewVideo = () => {
-  if (currentIndexVideo === totalVideos) {
+  if (currentIndexVideo === totalVideos - 1) {
     currentIndexVideo = 0;
   } else {
     currentIndexVideo++;
