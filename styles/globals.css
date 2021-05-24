@@ -33,6 +33,5 @@ i {
   height: 90vh;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 5vh 70vh 1fr;
   gap: 2rem;
 }

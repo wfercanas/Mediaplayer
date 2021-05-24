@@ -6,6 +6,7 @@
   display: grid;
   grid-auto-flow: row;
   grid-template-rows: 10% 1fr 10%;
+  max-height: 34vw;
 }
 
 #live-chat__header {

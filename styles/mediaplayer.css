@@ -6,8 +6,7 @@
 
 #mediaplayer__video {
   width: 100%;
-  height: 100%;
-  background-color: var(--lightgray);
+  background-color: var(--black );
   border-radius: 1rem;
 }
 
@@ -27,6 +26,7 @@
 #mediaplayer__controls i {
   font-size: 1.5rem;
 }
+
 #mediaplayer__controls .icon-volume-medium {
   font-size: 1.1rem;
 }
