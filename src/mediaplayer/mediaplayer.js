@@ -9,9 +9,13 @@ const currentMin = document.getElementById('current-min');
 const currentSec = document.getElementById('current-sec');
 const durationMin = document.getElementById('duration-min');
 const durationSec = document.getElementById('duration-sec');
+const nextButton = document.getElementById('next-button');
 
-video.src = videoSources[1].sources;
+const totalVideos = videoSources.length;
+let currentIndexVideo = 0;
+video.src = videoSources[currentIndexVideo].sources;
 
+/* Control play and pause buttons */
 const togglePlayPause = () => {
   if (playButton.classList.contains('off')) {
     playButton.classList.remove('off');
@@ -19,6 +23,13 @@ const togglePlayPause = () => {
   } else {
     playButton.classList.add('off');
     pauseButton.classList.remove('off');
+  }
+};
+
+const turnOnPauseButton = () => {
+  if (pauseButton.classList.contains('off')) {
+    pauseButton.classList.remove('off');
+    playButton.classList.add('off');
   }
 };
 
@@ -60,6 +71,16 @@ const setVideoCurrentTime = () => {
       : Math.floor(video.currentTime % 60);
 };
 
+/* Next video */
+const setNewVideo = () => {
+  if (currentIndexVideo === totalVideos) {
+    currentIndexVideo = 0;
+  } else {
+    currentIndexVideo++;
+  }
+  video.src = videoSources[currentIndexVideo].sources;
+};
+
 /* Event listeners */
 controls.addEventListener('click', (event) => {
   switch (event.target.id) {
@@ -76,5 +97,16 @@ controls.addEventListener('click', (event) => {
       pauseVideoProgress();
       togglePlayPause();
       break;
+    case 'next-button':
+      if (!video.paused) {
+        pauseVideoProgress();
+        video.pause();
+      }
+      setNewVideo();
+      playedVideo = false;
+      video.play();
+      turnOnPauseButton();
+      startVideoProgress();
+      setTimeout(setVideoDuration, 500);
   }
 });
