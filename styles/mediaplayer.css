@@ -19,7 +19,7 @@
 }
 
 #mediaplayer__controls {
-  background-color: var(--green);
+  background-color: var(--fullblack_transparent);
   color: var(--white);
   border-radius: 1rem;
   padding: 0 3rem;
@@ -28,8 +28,8 @@
   justify-content: space-evenly;
   position: absolute;
   bottom: 1rem;
-  left: 5rem;
-  right: 5rem;
+  left: 3rem;
+  right: 3rem;
 }
 
 #mediaplayer__controls p {
@@ -50,7 +50,7 @@
 }
 
 #mediaplayer__controls .icon-volume-medium {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .__controls--progressive-bar {
@@ -67,6 +67,56 @@
   background-color: var(--orange);
 }
 
-.off {
-  display: none;
+#volume-range {
+  -webkit-appearance: none;
+  background-color: transparent;
+  width: 4rem;
+  color: var(--black);
+}
+
+#volume-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid var(--black);
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-top: -0.225rem;
+  border-radius: 50%;
+  background: var(--white);
+  cursor: pointer;
+  box-shadow: 4px 0px 15px 1px var(--black);
+}
+
+#volume-range::-moz-range-thumb {
+  border: 1px solid var(--black);
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-top: -0.225rem;
+  border-radius: 50%;
+  background: var(--white);
+  cursor: pointer;
+  box-shadow: -2px 0px 15px 1px var(--black);
+}
+
+#volume-range:focus {
+  outline: none;
+}
+
+#volume-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.3rem;
+  cursor: pointer;
+  background: var(--white);
+  border-radius: 1rem;
+}
+
+#volume-range:focus::-webkit-slider-runnable-track {
+  background-color: var(--white);
+}
+
+#volume-range::-moz-range-track {
+  width: 100%;
+  height: 0.3rem;
+  cursor: pointer;
+  background: var(--white);
+  border-radius: 1rem;
 }

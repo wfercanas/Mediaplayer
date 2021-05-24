@@ -1,5 +1,6 @@
 :root {
   --fullblack: #000000;
+  --fullblack_transparent: #00000088;
   --black: #1e1c2a;
   --gray: #353340;
   --midgray: #514f55;
@@ -16,6 +17,7 @@
 html {
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -35,4 +37,8 @@ i {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 2rem;
+}
+
+.off {
+  display: none;
 }
