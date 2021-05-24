@@ -9,7 +9,7 @@ const currentMin = document.getElementById('current-min');
 const currentSec = document.getElementById('current-sec');
 const durationMin = document.getElementById('duration-min');
 const durationSec = document.getElementById('duration-sec');
-const nextButton = document.getElementById('next-button');
+// const nextButton = document.getElementById('next-button');
 
 const totalVideos = videoSources.length;
 let currentIndexVideo = 0;
@@ -107,7 +107,7 @@ controls.addEventListener('click', (event) => {
       video.play();
       turnOnPauseButton();
       startVideoProgress();
-      setTimeout(setVideoDuration, 500);
+      setTimeout(setVideoDuration, 1000);
       break;
   }
 });
