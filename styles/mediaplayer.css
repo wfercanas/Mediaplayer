@@ -6,12 +6,13 @@
 
 #mediaplayer__video {
   width: 100%;
-  background-color: var(--black );
+  background-color: var(--black);
   border-radius: 1rem;
 }
 
 #mediaplayer__controls {
   background-color: var(--gray);
+  color: var(--lightgray);
   border-radius: 1rem;
   padding: 0 3rem;
   display: flex;
@@ -25,6 +26,15 @@
 
 #mediaplayer__controls i {
   font-size: 1.5rem;
+}
+
+#mediaplayer__controls i:hover {
+  cursor: pointer;
+  color: var(--white);
+}
+
+.ci-move {
+  rotate: 45deg;
 }
 
 #mediaplayer__controls .icon-volume-medium {
@@ -43,4 +53,8 @@
 .__controls--progressive-bar.front {
   width: 30%;
   background-color: var(--orange);
+}
+
+.off {
+  display: none;
 }
