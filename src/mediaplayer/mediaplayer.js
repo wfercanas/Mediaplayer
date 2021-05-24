@@ -108,5 +108,6 @@ controls.addEventListener('click', (event) => {
       turnOnPauseButton();
       startVideoProgress();
       setTimeout(setVideoDuration, 500);
+      break;
   }
 });
