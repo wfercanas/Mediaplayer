@@ -24,6 +24,10 @@
   right: 5rem;
 }
 
+#mediaplayer__controls p {
+  font-size: 0.8rem;
+}
+
 #mediaplayer__controls i {
   font-size: 1.8rem;
   margin: 0 0.3rem;

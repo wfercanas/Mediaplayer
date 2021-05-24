@@ -5,6 +5,10 @@ const controls = document.getElementById('mediaplayer__controls');
 const playButton = document.getElementById('play-button');
 const pauseButton = document.getElementById('pause-button');
 const progressBar = document.getElementById('progress-bar');
+const currentMin = document.getElementById('current-min');
+const currentSec = document.getElementById('current-sec');
+const durationMin = document.getElementById('duration-min');
+const durationSec = document.getElementById('duration-sec');
 
 video.src = videoSources[1].sources;
 
@@ -18,8 +22,10 @@ const togglePlayPause = () => {
   }
 };
 
-/* Control progress-bar advancement */
-let videoProgress;
+/* Control video advancement */
+let playedVideo = false;
+let videoBarProgress;
+let videoTimeProgress;
 
 const currentVideoProgress = () => {
   progressBar.style.width = `${Math.floor(
@@ -28,17 +34,39 @@ const currentVideoProgress = () => {
 };
 
 const startVideoProgress = () => {
-  videoProgress = setInterval(currentVideoProgress, 1000);
+  videoBarProgress = setInterval(currentVideoProgress, 1000);
+  videoTimeProgress = setInterval(setVideoCurrentTime, 1000);
 };
 
 const pauseVideoProgress = () => {
-  clearInterval(videoProgress);
+  clearInterval(videoBarProgress);
+  clearInterval(videoTimeProgress);
+};
+
+const setVideoDuration = () => {
+  durationMin.textContent = Math.floor(video.duration / 60);
+  durationSec.textContent =
+    video.duration % 60 < 10
+      ? `0${Math.floor(video.duration % 60)}`
+      : Math.floor(video.duration % 60);
+  playedVideo = true;
+};
+
+const setVideoCurrentTime = () => {
+  currentMin.textContent = Math.floor(video.currentTime / 60);
+  currentSec.textContent =
+    video.currentTime % 60 < 10
+      ? `0${Math.floor(video.currentTime % 60)}`
+      : Math.floor(video.currentTime % 60);
 };
 
 /* Event listeners */
 controls.addEventListener('click', (event) => {
   switch (event.target.id) {
     case 'play-button':
+      if (!playedVideo) {
+        setVideoDuration();
+      }
       video.play();
       startVideoProgress();
       togglePlayPause();
