@@ -62,7 +62,8 @@
   rotate: 45deg;
 }
 
-#mediaplayer__controls .icon-volume-medium {
+#mediaplayer__controls .icon-volume-medium,
+#mediaplayer__controls .icon-volume-mute2 {
   font-size: 1.3rem;
 }
 
