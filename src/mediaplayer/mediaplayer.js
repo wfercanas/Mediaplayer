@@ -9,7 +9,6 @@ const currentMin = document.getElementById('current-min');
 const currentSec = document.getElementById('current-sec');
 const durationMin = document.getElementById('duration-min');
 const durationSec = document.getElementById('duration-sec');
-// const nextButton = document.getElementById('next-button');
 
 const totalVideos = videoSources.length;
 let currentIndexVideo = 0;
@@ -81,8 +80,25 @@ const setNewVideo = () => {
   video.src = videoSources[currentIndexVideo].sources;
 };
 
+/* Control volume */
+const setVolume = (event) => {
+  video.volume = event.target.value / 100;
+};
+
+/* Control widescreen */
+const toggleFullscreen = () => {
+  if (video.classList.contains('fullscreen-video')) {
+    video.classList.remove('fullscreen-video');
+    controls.classList.remove('fullscreen-controls');
+  } else {
+    video.classList.add('fullscreen-video');
+    controls.classList.add('fullscreen-controls');
+  }
+};
+
 /* Event listeners */
 controls.addEventListener('click', (event) => {
+  console.log(event);
   switch (event.target.id) {
     case 'play-button':
       if (!playedVideo) {
@@ -99,8 +115,8 @@ controls.addEventListener('click', (event) => {
       break;
     case 'next-button':
       if (!video.paused) {
-        pauseVideoProgress();
         video.pause();
+        pauseVideoProgress();
       }
       setNewVideo();
       playedVideo = false;
@@ -108,6 +124,12 @@ controls.addEventListener('click', (event) => {
       turnOnPauseButton();
       startVideoProgress();
       setTimeout(setVideoDuration, 1000);
+      break;
+    case 'volume-range':
+      setVolume(event);
+      break;
+    case 'fullscreen-button':
+      toggleFullscreen();
       break;
   }
 });

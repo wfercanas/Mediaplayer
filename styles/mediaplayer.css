@@ -18,6 +18,14 @@
   background-color: var(--black);
 }
 
+.fullscreen-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 #mediaplayer__controls {
   background-color: var(--fullblack_transparent);
   color: var(--white);
@@ -30,6 +38,11 @@
   bottom: 1rem;
   left: 3rem;
   right: 3rem;
+}
+
+#mediaplayer__controls.fullscreen-controls {
+  position: fixed;
+  bottom: 2rem;
 }
 
 #mediaplayer__controls p {
