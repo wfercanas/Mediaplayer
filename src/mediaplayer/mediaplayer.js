@@ -144,7 +144,6 @@ const toggleFullscreen = () => {
 
 /* Event listeners */
 controls.addEventListener('click', (event) => {
-  console.log(event);
   switch (event.target.id) {
     case 'play-button':
       if (!playedVideo) {
@@ -187,3 +186,5 @@ controls.addEventListener('click', (event) => {
 });
 
 window.addEventListener('load', setInitialVolume);
+
+export { volumeRange };
