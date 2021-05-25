@@ -85,8 +85,8 @@ const setNewVideo = () => {
 
 /* Control volume */
 const setInitialVolume = () => {
-  video.volume = 0.5;
-  volumeRange.value = 50;
+  video.volume = 0.75;
+  volumeRange.value = 75;
 };
 
 const setVolume = () => {
@@ -107,8 +107,8 @@ const toggleMute = (event) => {
   } else {
     volumeButton.classList.remove('off');
     muteButton.classList.add('off');
-    video.volume = 0.5;
-    volumeRange.value = 50;
+    video.volume = 0.75;
+    volumeRange.value = 75;
   }
 };
 
