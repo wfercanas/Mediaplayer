@@ -187,4 +187,4 @@ controls.addEventListener('click', (event) => {
 
 window.addEventListener('load', setInitialVolume);
 
-export { volumeRange };
+export { currentIndexVideo };
