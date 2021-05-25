@@ -35,6 +35,11 @@ const turnOnPauseButton = () => {
   }
 };
 
+const turnOnPlayButton = () => {
+  playButton.classList.remove('off');
+  pauseButton.classList.add('off');
+};
+
 /* Control video advancement */
 let playedVideo = false;
 let videoBarProgress;
@@ -44,6 +49,10 @@ const currentVideoProgress = () => {
   progressBar.style.width = `${Math.floor(
     (video.currentTime / video.duration) * 100
   )}%`;
+  if (video.ended) {
+    turnOnPlayButton();
+    setTimeout(pauseVideoProgress, 1000);
+  }
 };
 
 const startVideoProgress = () => {
@@ -73,7 +82,7 @@ const setVideoCurrentTime = () => {
       : Math.floor(video.currentTime % 60);
 };
 
-/* Next video */
+/* Skip video */
 const setNewVideo = () => {
   if (currentIndexVideo === totalVideos - 1) {
     currentIndexVideo = 0;
@@ -157,10 +166,10 @@ controls.addEventListener('click', (event) => {
       }
       setNewVideo();
       playedVideo = false;
-      video.play();
       turnOnPauseButton();
       startVideoProgress();
       setTimeout(setVideoDuration, 1000);
+      video.play();
       break;
     case 'volume-button':
       toggleMute(event);
