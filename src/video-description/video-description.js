@@ -5,6 +5,7 @@ const authorName = document.getElementById('author-name');
 const authorAvatar = document.getElementById('author-avatar');
 const videoTitle = document.getElementById('video-title');
 const videoDescription = document.getElementById('video-brief');
+const favoriteButton = document.getElementById('favorite-button');
 
 const setVideoDescription = () => {
   authorAvatar.src = videoSources[currentIndexVideo].authorAvatar;
@@ -13,6 +14,16 @@ const setVideoDescription = () => {
   videoDescription.textContent = videoSources[currentIndexVideo].description;
 };
 
+const toggleFavoriteButton = (event) => {
+  if (favoriteButton.style.backgroundColor === 'var(--red)') {
+    favoriteButton.style.backgroundColor = 'var(--midgray)';
+  } else {
+    console.log(event.target);
+    favoriteButton.style.backgroundColor = 'var(--red)';
+  }
+};
+
 window.addEventListener('load', setVideoDescription);
+favoriteButton.addEventListener('click', toggleFavoriteButton);
 
 export { setVideoDescription };
