@@ -1,4 +1,5 @@
 import { videoSources } from './mediaplayer-data.js';
+import { setVideoDescription } from '../video-description/video-description.js';
 
 const video = document.getElementById('mediaplayer__video');
 const controls = document.getElementById('mediaplayer__controls');
@@ -90,6 +91,7 @@ const setNewVideo = () => {
     currentIndexVideo++;
   }
   video.src = videoSources[currentIndexVideo].sources;
+  setVideoDescription();
 };
 
 /* Control volume */
@@ -187,4 +189,4 @@ controls.addEventListener('click', (event) => {
 
 window.addEventListener('load', setInitialVolume);
 
-export { currentIndexVideo };
+export { currentIndexVideo, video };

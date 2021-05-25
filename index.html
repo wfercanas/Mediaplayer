@@ -18,6 +18,7 @@
     <!-- Scripts -->
     <script src="./src/livechat/livechat.js" type="module" defer></script>
     <script src="./src/mediaplayer/mediaplayer.js" type="module" defer></script>
+    <script src="./src/video-description/video-description.js" type="module" defer></script>
     <title>Mediaplayer</title>
   </head>
   <body>
@@ -71,15 +72,14 @@
       <section id="video-description">
         <div id="video-description__content">
           <div id="video-description__content--owner">
-            <img src="./assets/avatars/Oliver.svg" alt="video owner avatar">
+            <img id="author-avatar" alt="video owner avatar">
             <div>
-              <h3>Andy William</h3>
+              <h3 id="author-name"></h3>
               <p>1980893 subscribers</p>
             </div>
           </div>
-          <h1>Basic how to ride your skateboard</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minima saepe blanditiis, et non harum voluptatem corrupti consequuntur quod qui. Voluptate rem explicabo possimus soluta unde magni cumque qui recusandae.
-          </p>
+          <h1 id="video-title"></h1>
+          <p id="video-brief"></p>
         </div>
         <div id="video-description__actions">
           <div id="video-description__actions--buttons">
