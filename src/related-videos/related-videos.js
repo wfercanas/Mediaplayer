@@ -81,7 +81,6 @@ const removeAllRelatedVideos = () => {
   }
   const totalRecommendedVideosUsed = 2;
   for (let j = 0; j < totalRecommendedVideosUsed; j++) {
-    console.log(twoRelatedVideosIndexesUsed);
     twoRelatedVideosIndexesUsed.pop();
   }
   setTwoRelatedVideos();

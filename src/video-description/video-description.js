@@ -18,7 +18,6 @@ const toggleFavoriteButton = (event) => {
   if (favoriteButton.style.backgroundColor === 'var(--red)') {
     favoriteButton.style.backgroundColor = 'var(--midgray)';
   } else {
-    console.log(event.target);
     favoriteButton.style.backgroundColor = 'var(--red)';
   }
 };
