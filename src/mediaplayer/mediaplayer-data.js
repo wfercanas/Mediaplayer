@@ -6,7 +6,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
     title: 'Big Buck Bunny',
     author: 'Collin Michaels',
-    authorAvatar: '../../assets/avatars/Collin.svg',
+    authorAvatar: './assets/avatars/Collin.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
   },
@@ -16,7 +16,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
     title: 'Elephant Dream',
     author: 'Ed Carpenter',
-    authorAvatar: '../../assets/avatars/Ed.svg',
+    authorAvatar: './assets/avatars/Ed.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg',
   },
@@ -27,7 +27,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
     title: 'For Bigger Blazes',
     author: 'Effie Woods',
-    authorAvatar: '../../assets/avatars/Effie.svg',
+    authorAvatar: './assets/avatars/Effie.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg',
   },
@@ -38,7 +38,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
     title: 'For Bigger Escape',
     author: 'Eliot Spencer',
-    authorAvatar: '../../assets/avatars/Eliot.svg',
+    authorAvatar: './assets/avatars/Eliot.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg',
   },
@@ -49,7 +49,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
     title: 'For Bigger Fun',
     author: 'Fabiana Ramirez',
-    authorAvatar: '../../assets/avatars/Fabian.svg',
+    authorAvatar: './assets/avatars/Fabian.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg',
   },
@@ -60,7 +60,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
     title: 'For Bigger Joyrides',
     author: 'Gael Clichy',
-    authorAvatar: '../../assets/avatars/Gael.svg',
+    authorAvatar: './assets/avatars/Gael.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg',
   },
@@ -71,7 +71,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
     title: 'For Bigger Meltdowns',
     author: 'Gerard Lopez',
-    authorAvatar: '../../assets/avatars/Gerard.svg',
+    authorAvatar: './assets/avatars/Gerard.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg',
   },
@@ -82,7 +82,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
     title: 'Sintel',
     author: 'Hasan Smith',
-    authorAvatar: '../../assets/avatars/Hasan.svg',
+    authorAvatar: './assets/avatars/Hasan.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg',
   },
@@ -93,7 +93,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
     title: 'Subaru Outback On Street And Dirt',
     author: 'Katina Hausenbaumm',
-    authorAvatar: '../../assets/avatars/Katina.svg',
+    authorAvatar: './assets/avatars/Katina.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg',
   },
@@ -104,7 +104,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
     title: 'Tears of Steel',
     author: 'Milo Raonic',
-    authorAvatar: '../../assets/avatars/Milo.svg',
+    authorAvatar: './assets/avatars/Milo.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg',
   },
@@ -115,7 +115,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4',
     title: 'Volkswagen GTI Review',
     author: 'Oliver Southgate',
-    authorAvatar: '../../assets/avatars/Oliver.svg',
+    authorAvatar: './assets/avatars/Oliver.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg',
   },
@@ -126,7 +126,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4',
     title: 'We Are Going On Bullrun',
     author: 'Gael Clichy',
-    authorAvatar: '../../assets/avatars/Gael.svg',
+    authorAvatar: './assets/avatars/Gael.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg',
   },
@@ -137,7 +137,7 @@ const videoSources = [
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4',
     title: 'What care can you get for a grand?',
     author: 'Fabiana Ramirez',
-    authorAvatar: '../../assets/avatars/Fabian.svg',
+    authorAvatar: './assets/avatars/Fabian.svg',
     thumb:
       'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/WhatCarCanYouGetForAGrand.jpg',
   },
