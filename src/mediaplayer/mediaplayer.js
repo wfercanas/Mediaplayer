@@ -1,5 +1,6 @@
 import { videoSources } from './mediaplayer-data.js';
 import { setVideoDescription } from '../video-description/video-description.js';
+import { removeAllRelatedVideos } from '../related-videos/related-videos.js';
 
 const video = document.getElementById('mediaplayer__video');
 const controls = document.getElementById('mediaplayer__controls');
@@ -94,6 +95,20 @@ const setNewVideo = () => {
   setVideoDescription();
 };
 
+const setSpecificVideo = (index) => {
+  currentIndexVideo = index;
+  if (!video.paused) {
+    video.pause();
+    pauseVideoProgress();
+  }
+  video.src = videoSources[index].sources;
+  playedVideo = false;
+  turnOnPauseButton();
+  startVideoProgress();
+  setTimeout(setVideoDuration, 1000);
+  video.play();
+};
+
 /* Control volume */
 const setInitialVolume = () => {
   video.volume = 0.75;
@@ -170,6 +185,7 @@ controls.addEventListener('click', (event) => {
       turnOnPauseButton();
       startVideoProgress();
       setTimeout(setVideoDuration, 1000);
+      removeAllRelatedVideos();
       video.play();
       break;
     case 'volume-button':
@@ -189,4 +205,4 @@ controls.addEventListener('click', (event) => {
 
 window.addEventListener('load', setInitialVolume);
 
-export { currentIndexVideo, video };
+export { currentIndexVideo, video, setSpecificVideo };

@@ -7,7 +7,8 @@ const videoSources = [
     title: 'Big Buck Bunny',
     author: 'Collin Michaels',
     authorAvatar: '../../assets/avatars/Collin.svg',
-    thumb: 'images/BigBuckBunny.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
   },
   {
     description: 'The first Blender Open Movie from 2006',
@@ -16,7 +17,8 @@ const videoSources = [
     title: 'Elephant Dream',
     author: 'Ed Carpenter',
     authorAvatar: '../../assets/avatars/Ed.svg',
-    thumb: 'images/ElephantsDream.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg',
   },
   {
     description:
@@ -26,7 +28,8 @@ const videoSources = [
     title: 'For Bigger Blazes',
     author: 'Effie Woods',
     authorAvatar: '../../assets/avatars/Effie.svg',
-    thumb: 'images/ForBiggerBlazes.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg',
   },
   {
     description:
@@ -36,7 +39,8 @@ const videoSources = [
     title: 'For Bigger Escape',
     author: 'Eliot Spencer',
     authorAvatar: '../../assets/avatars/Eliot.svg',
-    thumb: 'images/ForBiggerEscapes.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg',
   },
   {
     description:
@@ -46,7 +50,8 @@ const videoSources = [
     title: 'For Bigger Fun',
     author: 'Fabiana Ramirez',
     authorAvatar: '../../assets/avatars/Fabian.svg',
-    thumb: 'images/ForBiggerFun.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg',
   },
   {
     description:
@@ -56,7 +61,8 @@ const videoSources = [
     title: 'For Bigger Joyrides',
     author: 'Gael Clichy',
     authorAvatar: '../../assets/avatars/Gael.svg',
-    thumb: 'images/ForBiggerJoyrides.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg',
   },
   {
     description:
@@ -66,7 +72,8 @@ const videoSources = [
     title: 'For Bigger Meltdowns',
     author: 'Gerard Lopez',
     authorAvatar: '../../assets/avatars/Gerard.svg',
-    thumb: 'images/ForBiggerMeltdowns.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg',
   },
   {
     description:
@@ -76,7 +83,8 @@ const videoSources = [
     title: 'Sintel',
     author: 'Hasan Smith',
     authorAvatar: '../../assets/avatars/Hasan.svg',
-    thumb: 'images/Sintel.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg',
   },
   {
     description:
@@ -86,7 +94,8 @@ const videoSources = [
     title: 'Subaru Outback On Street And Dirt',
     author: 'Katina Hausenbaumm',
     authorAvatar: '../../assets/avatars/Katina.svg',
-    thumb: 'images/SubaruOutbackOnStreetAndDirt.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg',
   },
   {
     description:
@@ -96,7 +105,8 @@ const videoSources = [
     title: 'Tears of Steel',
     author: 'Milo Raonic',
     authorAvatar: '../../assets/avatars/Milo.svg',
-    thumb: 'images/TearsOfSteel.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg',
   },
   {
     description:
@@ -106,7 +116,8 @@ const videoSources = [
     title: 'Volkswagen GTI Review',
     author: 'Oliver Southgate',
     authorAvatar: '../../assets/avatars/Oliver.svg',
-    thumb: 'images/VolkswagenGTIReview.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg',
   },
   {
     description:
@@ -116,7 +127,8 @@ const videoSources = [
     title: 'We Are Going On Bullrun',
     author: 'Gael Clichy',
     authorAvatar: '../../assets/avatars/Gael.svg',
-    thumb: 'images/WeAreGoingOnBullrun.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg',
   },
   {
     description:
@@ -126,7 +138,8 @@ const videoSources = [
     title: 'What care can you get for a grand?',
     author: 'Fabiana Ramirez',
     authorAvatar: '../../assets/avatars/Fabian.svg',
-    thumb: 'images/WhatCarCanYouGetForAGrand.jpg',
+    thumb:
+      'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/WhatCarCanYouGetForAGrand.jpg',
   },
 ];
 

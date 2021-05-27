@@ -19,6 +19,7 @@
     <script src="./src/livechat/livechat.js" type="module" defer></script>
     <script src="./src/mediaplayer/mediaplayer.js" type="module" defer></script>
     <script src="./src/video-description/video-description.js" type="module" defer></script>
+    <script src="./src/related-videos/related-videos.js" type="module" defer></script>
     <title>Mediaplayer</title>
   </head>
   <body>
@@ -60,7 +61,7 @@
           <h2 id="live-chat__header--title">Live Chat</h2>
           <div id="live-chat__header--people">
             <i class="ci-user_voice"></i>
-            <p>15986 people</p>
+            <p>15.986 people</p>
           </div>
         </div>
         <div id="live-chat__content"></div>
@@ -75,7 +76,7 @@
             <img id="author-avatar" alt="video owner avatar">
             <div>
               <h3 id="author-name"></h3>
-              <p>1980893 subscribers</p>
+              <p>1.980.893 subscribers</p>
             </div>
           </div>
           <h1 id="video-title"></h1>
@@ -95,15 +96,15 @@
           </div>
           <div class="video-description__actions--data">
             <i class="ci-play_circle_outline"></i>
-            <p>125908 views</p>
+            <p>125.908 views</p>
           </div>
           <div class="video-description__actions--data">
             <i class="ci-heart_fill"></i>
-            <p>47987 likes</p>
+            <p>47.987 likes</p>
           </div>
           <div class="video-description__actions--data">
             <i class="ci-cast"></i>
-            <p>1938394 streaming</p>
+            <p>1.938.394 streaming</p>
           </div>
           <div class="video-description__actions--data">
             <i class="ci-stopwatch"></i>
@@ -113,31 +114,9 @@
       </section>
       <section id="related-videos">
         <h2 id="related-videos__title">Related Videos</h2>
-        <div class="related-videos__container">
-          <img src="" alt="" class="related-videos__cover">
-          <div class="related-videos__content">
-            <h4 class="related-videos__content--title">Prepare for your first skateboard jump</h4>
-            <p class="related-videos__content--author">Jordan Wise</p>
-            <div class="related-videos__content--metadata">
-              <p class="related-videos__content--views">125908 views</p>
-              <i class="ci-dot_01_xs"></i>
-              <p class="related-videos__content--published">2 days ago</p>
-            </div>
-          </div>
+        <div id="related-videos__cards">     
         </div>
-        <div class="related-videos__container">
-          <img src="" alt="" class="related-videos__cover">
-          <div class="related-videos__content">
-            <h4 class="related-videos__content--title">Prepare for your first skateboard jump</h4>
-            <p class="related-videos__content--author">Jordan Wise</p>
-            <div class="related-videos__content--metadata">
-              <p class="related-videos__content--views">125908 views</p>
-              <i class="ci-dot_01_xs"></i>
-              <p class="related-videos__content--published">2 days ago</p>
-            </div>
-          </div>
-        </div>
-        <button id="related-videos__more-videos-btn">See all related videos (32)</button>
+        <button id="related-videos__more-videos-btn">See all related videos</button>
       </section>
     </div>
   </body>

@@ -15,8 +15,17 @@
   margin-right: 1rem;
 }
 
+.related-videos__cover:hover {
+  cursor: pointer;
+}
+
 .related-videos__content--title {
   margin: 0 0 0.5rem;
+}
+
+.related-videos__content--title:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .related-videos__content--author {
