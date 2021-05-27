@@ -109,7 +109,7 @@ const setSpecificVideo = (index) => {
   video.play();
 };
 
-/* Control volume */
+/* Volume control */
 const setInitialVolume = () => {
   video.volume = 0.75;
   volumeRange.value = 75;
@@ -148,7 +148,7 @@ const turnOnMuteButton = () => {
   muteButton.classList.remove('off');
 };
 
-/* Control widescreen */
+/* Control fullscreen */
 const toggleFullscreen = () => {
   if (video.classList.contains('fullscreen-video')) {
     video.classList.remove('fullscreen-video');
@@ -159,34 +159,64 @@ const toggleFullscreen = () => {
   }
 };
 
-/* Event listeners */
-controls.addEventListener('click', (event) => {
+/* Display controls when hover */
+
+video.addEventListener('mouseover', () => {
+  controls.style.visibility = 'visible';
+});
+
+video.addEventListener('mouseleave', () => {
+  controls.style.visibility = 'hidden';
+});
+
+controls.addEventListener('mouseover', () => {
+  controls.style.visibility = 'visible';
+});
+
+controls.addEventListener('mouseleave', () => {
+  controls.style.visibility = 'hidden';
+});
+
+/* Media player functionality */
+const play = () => {
+  if (!playedVideo) {
+    setVideoDuration();
+  }
+  video.play();
+  startVideoProgress();
+  togglePlayPause();
+};
+
+const pause = () => {
+  video.pause();
+  pauseVideoProgress();
+  togglePlayPause();
+};
+
+const next = () => {
+  if (!video.paused) {
+    video.pause();
+    pauseVideoProgress();
+  }
+  setNewVideo();
+  playedVideo = false;
+  turnOnPauseButton();
+  startVideoProgress();
+  setTimeout(setVideoDuration, 1000);
+  removeAllRelatedVideos();
+  video.play();
+};
+
+const mediaplayer = (event) => {
   switch (event.target.id) {
     case 'play-button':
-      if (!playedVideo) {
-        setVideoDuration();
-      }
-      video.play();
-      startVideoProgress();
-      togglePlayPause();
+      play();
       break;
     case 'pause-button':
-      video.pause();
-      pauseVideoProgress();
-      togglePlayPause();
+      pause();
       break;
     case 'next-button':
-      if (!video.paused) {
-        video.pause();
-        pauseVideoProgress();
-      }
-      setNewVideo();
-      playedVideo = false;
-      turnOnPauseButton();
-      startVideoProgress();
-      setTimeout(setVideoDuration, 1000);
-      removeAllRelatedVideos();
-      video.play();
+      next();
       break;
     case 'volume-button':
       toggleMute(event);
@@ -201,8 +231,13 @@ controls.addEventListener('click', (event) => {
       toggleFullscreen();
       break;
   }
-});
+};
 
+/* Event listeners */
+controls.addEventListener('click', mediaplayer);
+video.addEventListener('click', () => {
+  video.paused ? play() : pause();
+});
 window.addEventListener('load', setInitialVolume);
 
 export { currentIndexVideo, video, setSpecificVideo };
