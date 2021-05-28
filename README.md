@@ -46,6 +46,7 @@ The project has special parts to practice the DOM Manipulation of HTMLMediaEleme
 2. Also in mobile, there is a default behavior within the mobile browsers that enables by default the media control of the browser and overlaps the use of the project controls. Is there a way to prevent this default behavior? **Look for it!** 🕵️‍♀️
 3. In the livechat section, would be fun to add some random mesagges from fictional users in random intervals.
 4. The share button could open a new window in the browser to share this project in twitter.
+5. When a video finished, would be nice to show a countdown in screen and right after the end push the next video in autoplay.
 
 ## Acknowledgements
 
