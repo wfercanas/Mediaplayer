@@ -44,6 +44,11 @@
   color: var(--lightgray);
 }
 
+#video-description__actions--buttons button {
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
 #video-description__actions--buttons button:hover {
   cursor: pointer;
   color: var(--white);
@@ -65,4 +70,24 @@
 
 .video-description__actions--data p {
   margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 700px) {
+  #video-description {
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+  }
+
+  #video-description__actions {
+    display: flex;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #video-description__actions--buttons {
+    order: 1;
+    margin: 1rem;
+    flex-grow: 4;
+  }
 }

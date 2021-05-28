@@ -61,3 +61,18 @@
   cursor: pointer;
   color: var(--white);
 }
+
+@media screen and (max-width: 900px) {
+  #related-videos__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #related-videos__cards {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

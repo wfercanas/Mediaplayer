@@ -30,3 +30,9 @@
   cursor: pointer;
   color: var(--white);
 }
+
+@media screen and (max-width: 900px) {
+  #profile {
+    grid-row-start: 1;
+  }
+}

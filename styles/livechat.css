@@ -1,11 +1,11 @@
 /* Live Chat section */
 #live-chat {
   background-color: var(--gray);
-  padding: 1rem;
+  padding: 1rem 1rem 0;
   border-radius: 1rem;
   display: grid;
   grid-auto-flow: row;
-  grid-template-rows: 10% 1fr 10%;
+  grid-template-rows: 10% 1fr 3rem;
   max-height: 34vw;
 }
 
@@ -61,7 +61,7 @@
   color: var(--lightgray);
   border-radius: 1rem;
   padding: 1rem;
-  margin-top: 1rem;
+  margin: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,4 +96,11 @@
 #live-chat__write i:hover {
   cursor: pointer;
   color: var(--white);
+}
+
+@media screen and (max-width: 700px) {
+  #live-chat {
+    max-height: 60vw;
+    grid-template-rows: 2rem 1fr 3rem;
+  }
 }

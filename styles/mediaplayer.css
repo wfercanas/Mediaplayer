@@ -77,8 +77,9 @@
 }
 
 .__controls--progressive-bar.back {
-  width: 60%;
+  width: 40%;
   background-color: var(--lightgray);
+  margin: 0 0.5rem 0 1rem;
 }
 
 .__controls--progressive-bar.front {
@@ -138,4 +139,46 @@
   cursor: pointer;
   background: var(--white);
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+  #mediaplayer__controls {
+    left: 1rem;
+    right: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #mediaplayer__controls i {
+    font-size: 1.2rem;
+  }
+
+  #mediaplayer__controls .icon-volume-medium,
+  #mediaplayer__controls .icon-volume-mute2 {
+    font-size: 1rem;
+  }
+
+  .__controls--progressive-bar.back {
+    width: 30%;
+    margin: 0 0.5rem 0 1rem;
+  }
+
+  #mediaplayer__controls p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .__controls--progressive-bar.back {
+    width: 25%;
+  }
+
+  #mediaplayer__controls p {
+    font-size: 0.6rem;
+  }
+
+  #volume-range {
+    width: 2.5rem;
+  }
 }

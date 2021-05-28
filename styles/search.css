@@ -24,3 +24,9 @@
 #search-bar input::placeholder {
   color: var(--lightgray);
 }
+
+@media screen and (max-width: 900px) {
+  #search-bar {
+    width: auto;
+  }
+}
