@@ -50,6 +50,10 @@ i {
 }
 
 @media screen and (max-width: 900px) {
+  body {
+    padding: 4vh 2rem;
+  }
+
   #app {
     grid-template-columns: 1fr;
   }

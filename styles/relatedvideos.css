@@ -8,8 +8,8 @@
 }
 
 .related-videos__cover {
-  width: 35%;
-  height: auto;
+  width: 8rem;
+  height: 6rem;
   background-color: var(--lightgray);
   border-radius: 1rem;
   margin-right: 1rem;

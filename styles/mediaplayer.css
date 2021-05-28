@@ -19,6 +19,7 @@
 
 #mediaplayer__video {
   width: 100%;
+  border-radius: 1rem;
   background-color: var(--black);
 }
 
